@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+
+}
+
+.wrap {
+  width: 1140px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+.header {
+  background: #222222;
+  outline: 1px solid green;
+  color: #fff;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo {
+  background: #F1E4E6;
+}
+
+.сategories {
+  background-color: #fff;
+}
+
+.products {
+  background-color: #fff;
+}
+.advantages {
+  background: #222224;
+}
