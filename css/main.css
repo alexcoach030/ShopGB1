@@ -638,6 +638,7 @@ body {
   line-height: 17px;
   color: #6F6E6E;
   overflow: hidden;
+  outline: none;
 }
 
 
@@ -752,6 +753,7 @@ summary::-webkit-details-marker {
   width: 360px;
   background-color: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding-left: 15px;
 }
 
 .filter-categories-text{
@@ -774,8 +776,20 @@ summary::-webkit-details-marker {
   flex-direction: column;
 }
 
+.catalog-filter-checkbox form:first-child{
+  margin-top: 10px;
+}
+
 .catalog-checkbox summary{
   margin-top: 14px;
+}
+.checkbox-form-block{
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
 }
 
 .filter-details summary{
@@ -791,13 +805,25 @@ summary::-webkit-details-marker {
 
 .filter-categories-summary{
   line-height: 37px;
+  color: #6F6E6E!important;
+}
+
+.filter-categories-summary:hover{
   color: #EF5B70!important;
+}
+
+.filter-categories-summary:focus{
+  color: #EF5B70!important;
+}
+
+.filter-categories-summary:last-child{
+  margin-bottom: 16px;
 }
 
 .filter-items{
   color: #6F6E6E!important;
   margin-left: 15px;
-
+  font-weight: normal!important;
 }
 
 .filter-categories details a{
