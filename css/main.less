@@ -1,9 +1,4 @@
-@dark-pink: #F16D7F;
-@light-pink: #F8F3F4;
-@spacing: 20px;
-@font-color: #575757;
-@font-color-dark: #222222;
-@grey-color: #EAEAEA;
+@import "variables";
 
 * {
   box-sizing: border-box;
@@ -1128,30 +1123,10 @@ summary::-webkit-details-marker {
   color: #656565;
 }
 
-.bem-button{
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.bem-closing{
-  position: absolute;
-  fill: #575757;
-  &:hover{
-    .bem-closing_hovered;
-  }
-}
-
-.bem-closing__cart{
-  .bem-closing;
-  top: 25px;
-  left: 345px;
-}
-
-.bem-closing_hovered{
-  fill: @dark-pink;
-}
+@import "bem-button/bem-button";
+@import "bem-closing/bem-closing_hovered/bem-closing_hovered";
+@import "bem-closing/bem-closing";
+@import "bem-closing/bem-closing__cart/bem-closing__cart";
 
 .bem-content__cart-product-space{
   margin-bottom: @spacing*2;
