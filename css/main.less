@@ -51,9 +51,7 @@ h1{
 }
 
 .dropdown-content{
-  position: absolute;
-  margin-left: 180px;
-  margin-top: 22px;
+  position: relative;
   padding: 16px;
   width: 232px;
   height: 764px;
@@ -61,8 +59,8 @@ h1{
   color: #222222;
   display: flex;
   flex-direction: column;
-  visibility: hidden;
 }
+
 .dropdown-content-tag p{
   font-style: normal;
   font-weight: bold;
@@ -90,21 +88,24 @@ h1{
   line-height: 25px;
   color: #6F6E6E;
   margin: 0 20px;
+  &:hover{
+    color: @dark-pink;
+  }
 }
 .dropdown-background{
   position: absolute;
-  margin-top: 20px;
-  margin-left: -1200px;
   height: 764px;
-  width: 1600px;
-  z-index: 0;
+  top: 75px;
+  left: 0;
+  right: 0;
   background-color: rgba(25, 23, 23, 0.7);
-  visibility: hidden;
+  justify-content: flex-end;
+  display: none;
 }
-/* Ховер для менюшки вверху - восстановить позже
-.header-menu-dropdown:hover~.dropdown-content{visibility: visible}
-.header-menu-dropdown:hover~.dropdown-background{visibility: visible}
-*/
+
+.dropdown-background-open{
+  display: flex;
+}
 
 .dropdown-content-tag{
   display: flex;
@@ -1136,6 +1137,17 @@ summary::-webkit-details-marker {
   font-size: 18px;
   line-height: 22px;
   color: #656565;
+}
+
+.bem-closing__menubtn_hovered{
+  fill: @dark-pink;
+}
+
+.bem-closing__menubtn{
+  fill: #6F6E6E;
+  &:hover{
+    .bem-closing__menubtn_hovered
+  }
 }
 
 @import "bem-button/bem-button";
