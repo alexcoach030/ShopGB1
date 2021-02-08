@@ -32,6 +32,10 @@ h1{
   margin-bottom: 128px;
 }
 
+.product-main{
+  height: 2728px;
+}
+
 .header-logo{
   height: 38px;
   width: 44px;
@@ -545,6 +549,7 @@ h1{
   outline: none;
   border: none;
   transition: 2s;
+  margin-left: -5px;
 }
 
 .subscribe-btn:hover{
@@ -868,9 +873,12 @@ summary::-webkit-details-marker {
   color: #6F6E6E;
 }
 
+summary{ /*чтобы не было треугольника в firefox*/
+  display: block;
+}
+
 .filter-details summary{
   color: #000000;
-
 }
 
 .filter-details summary:focus{
