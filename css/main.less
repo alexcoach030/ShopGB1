@@ -27,7 +27,7 @@ h1{
   color: #fff;
 }
 
-.main{
+.catalog-main{
   height: 2272px;
   margin-bottom: 128px;
 }
@@ -644,6 +644,8 @@ h1{
   float: left;
 }
 
+
+
 .catalog-breadcramb ul li a{
   text-decoration: none;
   font-style: normal;
@@ -661,6 +663,7 @@ h1{
 
 .catalog-filter{
   margin-bottom: 65px;
+  height: 38px;
 }
 
 .catalog-filter-wrap{
@@ -1675,6 +1678,34 @@ summary{ /*чтобы не было треугольника в firefox*/
   .subscribe{
     margin-top: 48px;
   }
+
+  .catalog-header{
+    margin-bottom: 24px;
+  }
+
+  .catalog-filter{
+    margin-bottom: 40px;
+  }
+
+  .catalog-filter-trend{
+    margin-left: auto;
+  }
+
+  .catalog-main{
+    height: 2681px;
+  }
+
+  .catalog-product-hidden{
+    display: none;
+  }
+
+  .catalog-product{
+    margin-bottom: 16px;
+  }
+
+  .catalog-pagination{
+    margin: 25px auto;
+  }
 }
 
 @media screen and (max-width: 770px){
@@ -1793,6 +1824,49 @@ summary{ /*чтобы не было треугольника в firefox*/
 
   .brand{
     margin: 0 0 10px 0;
+  }
+
+  .catalog-wrap{
+    margin-bottom: 25px;
+    flex-direction: column;
+  }
+
+  .catalog-breadcramb ul{
+    padding-left: 0;
+    li{
+      letter-spacing: 2px;
+    }
+  }
+
+  .catalog-wrap{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .catalog-product{
+    overflow: unset;
+  }
+
+  .catalog-tag h1{
+    margin-top: 24px;
+  }
+
+  .filter-text_elem{
+    span{
+      display: none;
+    }
+    svg{
+      height: 25px;
+      width: 38px;
+    }
+  }
+  .catalog-filter{
+    margin-bottom: 32px;
+  }
+
+  .catalog-main{
+    height: 5017px;
   }
 }
 
