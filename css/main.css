@@ -573,6 +573,9 @@ h1 {
   flex-basis: 32%;
   margin-top: 14px;
 }
+.pagination {
+  width: 100%;
+}
 .filter-text {
   font-style: normal;
   font-weight: normal;
@@ -1542,6 +1545,33 @@ summary {
   .bem-content__cart-usabilities .bem-cart-usabilities__button {
     margin: 0 25px 64px 25px;
   }
+  .bem-content__registration {
+    display: flex!important;
+    flex-direction: row!important;
+    justify-content: space-between !important;
+    align-items: flex-start;
+  }
+  .bem-content__registration .bem-loyalities__tag {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .bem-registration {
+    width: 48%;
+  }
+  .bem-loyalities {
+    width: 50%;
+  }
+  .bem-loyalities i {
+    margin: 0;
+  }
+  .bem-loyalities__tag_tabled {
+    margin-bottom: 32px!important;
+  }
+  .bem-loyalities__tag i svg {
+    float: left;
+    margin-bottom: 17px;
+    margin-right: 22px;
+  }
 }
 @media screen and (max-width: 770px) {
   .wrap {
@@ -1785,6 +1815,17 @@ summary {
     margin: 0 0 64px 0;
     font-size: 12px;
     line-height: 14px;
+  }
+  .bem-content__registration {
+    flex-direction: column!important;
+    align-items: center!important;
+  }
+  .bem-registration {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .bem-loyalities {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
