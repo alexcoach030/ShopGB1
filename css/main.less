@@ -1142,6 +1142,7 @@ summary{ /*чтобы не было треугольника в firefox*/
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 75%;
 }
 
 .bem-cart-image{
@@ -1714,6 +1715,38 @@ summary{ /*чтобы не было треугольника в firefox*/
   .product-catalog-wrap{
     justify-content: space-around;
   }
+
+  .bem-space{
+    margin-bottom: 60px;
+  }
+
+  .bem-content_wrap{
+    flex-direction: column;
+    align-items: center;
+    .bem-content__cart-others{
+      flex-direction: row;
+      justify-content: space-around;
+      .bem-shipping-form{
+        width: 47%;
+      }
+      .bem-total-price{
+        width: 47%;
+        margin-top: 37px;
+      }
+    }
+  }
+
+  .bem-content__cart-product{
+    width: 95vw;
+    transition: 0.7s;
+  }
+
+  .bem-content__cart-usabilities{
+    justify-content: center;
+    .bem-cart-usabilities__button{
+      margin: 0 25px 64px 25px;
+    }
+  }
 }
 
 @media screen and (max-width: 770px){
@@ -1929,6 +1962,98 @@ summary{ /*чтобы не было треугольника в firefox*/
     max-height: 3518px;
   }
 
+  .bem-main-header__tag{
+    width: 100%;
+    text-align: center;
+  }
+
+  .bem-space{
+    margin-bottom: 40px;
+  }
+
+  .bem-content__main-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bem-content__cart-product{
+    height: 188px;
+  }
+
+  .bem-cart-image{
+    overflow: unset;
+    height: 188px;
+    width: 144px;
+    img{
+      height: 188px;
+      width: 144px;
+    }
+  }
+
+  .bem-cart-content{
+    padding: 14px 17px;
+    h2{
+      font-size: 16px;
+      font-weight: 700;
+      width: 140px;
+      line-height: 19px;
+      margin-bottom: 25px;
+    }
+
+    p{
+      font-size: 14px;
+      line-height: 17px;
+      margin: 0 0 4px 0;
+    }
+  }
+
+  .bem-cart-content__quantity{
+    font-size: 10px;
+    line-height: 12px;
+    height: 15px;
+    width: 24px;
+  }
+
+  .bem-closing__cart{
+    top: 17px;
+    right: 12px;
+    svg{
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .bem-space130{
+    margin-bottom: 96px;
+  }
+
+  .bem-content_wrap{
+    .bem-content__cart-others{
+      flex-direction: column;
+      align-items: center;
+    }
+    .bem-content__cart-others{
+      .bem-shipping-form{
+        width: 100%;
+      }
+      .bem-total-price{
+        margin-top: 49px;
+        width: 100%;
+      }
+    }
+  }
+
+  .bem-content__cart-usabilities{
+    justify-content: space-around;
+    width: 99vw;
+    .bem-cart-usabilities__button{
+      width: 45%;
+      margin: 0 0 64px 0;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
 }
 
 
