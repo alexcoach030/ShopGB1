@@ -32,10 +32,6 @@ h1{
   margin-bottom: 128px;
 }
 
-.product-main{
-  height: 2728px;
-}
-
 .header-logo{
   height: 38px;
   width: 44px;
@@ -549,7 +545,7 @@ h1{
   outline: none;
   border: none;
   transition: 2s;
-  margin-left: -5px;
+  margin-left: -15px;
 }
 
 .subscribe-btn:hover{
@@ -1673,6 +1669,7 @@ summary{ /*чтобы не было треугольника в firefox*/
 
   .recension{
     margin-top: 54px;
+    width: 70%;
   }
 
   .subscribe{
@@ -1706,11 +1703,22 @@ summary{ /*чтобы не было треугольника в firefox*/
   .catalog-pagination{
     margin: 25px auto;
   }
+  .product-catalog{
+    margin-bottom: 128px;
+  }
+
+  .product-main{
+    min-height: 2997px;
+  }
+
+  .product-catalog-wrap{
+    justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 770px){
   .wrap{
-    padding: 0 16px;
+    padding: 0 8px;
   }
 
   .header-acc{
@@ -1801,11 +1809,14 @@ summary{ /*чтобы не было треугольника в firefox*/
   }
 
   .recension{
-    width: 70%;
+    width: 100%;
   }
 
   .subscribe{
-    width: 70%;
+    width: 100%;
+    p{
+      font-size: 14px;
+    }
   }
 
   .footer{
@@ -1868,6 +1879,56 @@ summary{ /*чтобы не было треугольника в firefox*/
   .catalog-main{
     height: 5017px;
   }
+
+  .product-slider{
+    margin-top: -25px;
+    width: 100vw;
+    height: 110vw;
+    padding-top: 55px;
+    padding-bottom: 85px;
+  }
+
+  .product-slider-wrap{
+    img{
+      width: 65vw;
+    }
+  }
+
+  .product-description-wrap{
+    top: 0;
+  }
+
+  .catalog-checkbox{
+    .filter-text{
+      font-size: 10px;
+    }
+  }
+
+  .product-description-wrap{
+    margin-bottom: 64px;
+  }
+
+  .product-catalog-wrap{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .catalog-product{
+      margin-bottom: 0;
+    }
+  }
+
+  .product-description-text{
+    padding: 0 12px;
+  }
+
+  .product-catalog{
+    margin-bottom: 64px;
+  }
+
+  .product-main{
+    max-height: 3518px;
+  }
+
 }
 
 
