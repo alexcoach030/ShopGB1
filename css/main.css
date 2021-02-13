@@ -282,8 +282,13 @@ h1 {
   transition: 1s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
 }
-.product-item-hover:hover {
+.product-item-hover:hover,
+.product-item-hover:focus,
+.product-item-hover:active {
   opacity: 1;
+}
+.product-item-hover:hover .addcart {
+  display: inline-block;
 }
 .addcart {
   background-color: transparent;
@@ -298,6 +303,7 @@ h1 {
   cursor: pointer;
   border: none;
   transition: 0.2s;
+  display: none;
 }
 .addcart:hover {
   transform: scale(1.1);
@@ -1466,7 +1472,7 @@ summary {
   }
   .feedback {
     height: 693px;
-    background-image: url("../img/bgisub-tablet.jpg");
+    background-image: url("../img/feedbackimg-tablet.jpg");
   }
   .feedback-background {
     height: 693px;
@@ -1826,10 +1832,8 @@ summary {
   .bem-loyalities {
     width: 100%;
   }
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .feedback {
-    background-image: url("../img/feedbackimg@2x.jpg");
+    background-image: url("../img/feedbackimg-phone.jpg");
   }
 }
 /*# sourceMappingURL=main.css.map */
