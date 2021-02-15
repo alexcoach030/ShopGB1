@@ -285,10 +285,6 @@ h1 {
   height: 581px;
   margin-bottom: 30px;
   background-color: #F8F8F8;
-  display: block;
-}
-.product-item1 {
-  position: relative;
 }
 .product-item-hover {
   position: absolute;
@@ -302,14 +298,21 @@ h1 {
   opacity: 0;
   transition: 1s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+  z-index: 100;
 }
 .product-item-hover:hover,
 .product-item-hover:focus,
 .product-item-hover:active {
   opacity: 1;
-  z-index: 100;
+  transition: 1s;
 }
-.product-item-hover:hover ~ .bem-catalog-product img {
+.product-picture {
+  overflow: hidden;
+}
+.product-picture img {
+  transition: 1s;
+}
+.product-item-hover:hover ~ .product-picture img {
   transform: scale(1.5);
 }
 .addcart {
@@ -655,51 +658,6 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
-}
-.catalog-product {
-  height: 580px;
-  width: 360px;
-  background-color: #F8F8F8;
-  margin-bottom: 30px;
-  overflow: hidden;
-}
-.catalog-product img {
-  transition: 3s;
-  transition-timing-function: cubic-bezier(0.7, 0.2, 0.3, 1);
-}
-.catalog-product a {
-  text-decoration: none;
-}
-.catalog-product-name {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 16px;
-  color: #000000;
-  margin: 24px 0 12px 0;
-  height: 3%;
-  overflow: hidden;
-}
-.catalog-product-text {
-  font-style: normal;
-  height: 49px;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #5D5D5D;
-  margin: 0 0 18px 0;
-  overflow: hidden;
-}
-.catalog-product-price {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: #F16D7F;
-  margin-bottom: 20px;
-}
-.catalog-product p {
-  padding: 0 16px 0 30px;
 }
 .catalog-pagination {
   margin: 20px auto;
@@ -1347,9 +1305,6 @@ summary {
   font-size: 13px;
   line-height: 16px;
 }
-.bem-overflow_hidden {
-  overflow: hidden;
-}
 .bem-registration__button {
   background-color: #F16D7F;
   height: 50px;
@@ -1878,6 +1833,9 @@ summary {
     margin-bottom: 25px;
     flex-direction: column;
   }
+  .catalog-wrap .product-item {
+    margin-bottom: 19px;
+  }
   .catalog-breadcramb ul {
     padding-left: 0;
     margin-top: 9px;
@@ -1943,6 +1901,9 @@ summary {
     align-items: center;
   }
   .product-catalog-wrap .catalog-product {
+    margin-bottom: 0;
+  }
+  .product-catalog-wrap .product-item {
     margin-bottom: 0;
   }
   .product-description-text {
